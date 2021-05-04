@@ -31,7 +31,7 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
-deploy:
+build:
   name: Deploy to Production
   runs-on: ubuntu-latest
   needs: [laravel-test]
