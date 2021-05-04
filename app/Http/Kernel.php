@@ -21,16 +21,10 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         \App\Http\Middleware\ForceJsonResponse::class,
         \App\Http\Middleware\Cors::class,
->>>>>>> bac3761 (a new update to our backend server)
-=======
         \App\Http\Middleware\ForceJsonResponse::class,
         \App\Http\Middleware\Cors::class,
->>>>>>> bac3761bd6a126f93e2e2b41b5c1f523ebda034d
     ];
 
     /**
@@ -50,15 +44,9 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
             \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
->>>>>>> bac3761 (a new update to our backend server)
-=======
             \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
->>>>>>> bac3761bd6a126f93e2e2b41b5c1f523ebda034d
-            'throttle:api',
+           'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
@@ -80,15 +68,7 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         'json.response' => \App\Http\Middleware\ForceJsonResponse::class,
         'cors' => \App\Http\Middleware\Cors::class,
->>>>>>> bac3761 (a new update to our backend server)
-=======
-        'json.response' => \App\Http\Middleware\ForceJsonResponse::class,
-        'cors' => \App\Http\Middleware\Cors::class,
->>>>>>> bac3761bd6a126f93e2e2b41b5c1f523ebda034d
     ];
 }
