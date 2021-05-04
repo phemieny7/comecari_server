@@ -6,10 +6,18 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+<<<<<<< HEAD
 
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
+=======
+use Laravel\Sanctum\HasApiTokens;
+
+class User extends Authenticatable
+{
+    use HasApiTokens, HasFactory, Notifiable;
+>>>>>>> bac3761 (a new update to our backend server)
 
     /**
      * The attributes that are mass assignable.
@@ -20,6 +28,11 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+<<<<<<< HEAD
+=======
+        'phone',
+        'verification_code'
+>>>>>>> bac3761 (a new update to our backend server)
     ];
 
     /**

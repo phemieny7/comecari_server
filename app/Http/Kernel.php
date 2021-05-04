@@ -21,6 +21,11 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+<<<<<<< HEAD
+=======
+        \App\Http\Middleware\ForceJsonResponse::class,
+        \App\Http\Middleware\Cors::class,
+>>>>>>> bac3761 (a new update to our backend server)
     ];
 
     /**
@@ -40,6 +45,10 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
+<<<<<<< HEAD
+=======
+            \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+>>>>>>> bac3761 (a new update to our backend server)
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
@@ -62,5 +71,10 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+<<<<<<< HEAD
+=======
+        'json.response' => \App\Http\Middleware\ForceJsonResponse::class,
+        'cors' => \App\Http\Middleware\Cors::class,
+>>>>>>> bac3761 (a new update to our backend server)
     ];
 }
