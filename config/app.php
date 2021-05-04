@@ -226,15 +226,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
         'Helper' => App\Helpers\Helper::class,
->>>>>>> bac3761 (a new update to our backend server)
-=======
         'Helper' => App\Helpers\Helper::class,
->>>>>>> bac3761bd6a126f93e2e2b41b5c1f523ebda034d
-
     ],
 
 ];
