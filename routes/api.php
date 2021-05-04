@@ -3,8 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,13 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-=======
-=======
->>>>>>> bac3761bd6a126f93e2e2b41b5c1f523ebda034d
-use App\Http\Controllers\UserController;
-
-//user routes
-
 
 
 
@@ -38,11 +30,5 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
     Route::post('/login', [UserController::class, 'login']);
     Route::post('/logout', [UserController::class, 'logout'])->middleware('auth:sanctum');
     Route::post('/request-pickup', [UserController::class, 'request_pickup']);
-  });  
-
-<<<<<<< HEAD
+  }); 
 });
->>>>>>> bac3761 (a new update to our backend server)
-=======
-});
->>>>>>> bac3761bd6a126f93e2e2b41b5c1f523ebda034d
